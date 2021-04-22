@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sign_up_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="70dp"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/edit_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="300dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Input your name"
+        app:layout_constraintBottom_toBottomOf="@id/edit_sign_up"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/edit_id"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Input your id"
+        app:layout_constraintTop_toBottomOf="@id/edit_name"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Input your pw"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/edit_id"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_check_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Input your pw again"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/edit_password"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="50dp"
+        />
+
+    <Button
+        android:id="@+id/sign_up_btn_real"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="@id/sign_up_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/white"
+        android:text="SIGN UP"
+        android:textSize="30sp"
+        android:gravity="center"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

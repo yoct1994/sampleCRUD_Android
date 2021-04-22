@@ -1,4 +1,4 @@
-package fcm.test.crud_test;
+package fcm.test.crud_test.ui;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -6,8 +6,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -16,6 +14,7 @@ import android.widget.Toast;
 
 import java.util.List;
 
+import fcm.test.crud_test.R;
 import fcm.test.crud_test.adapter.GetListAdapter;
 import fcm.test.crud_test.listener.GetListListener;
 import fcm.test.crud_test.listener.ListPostListener;

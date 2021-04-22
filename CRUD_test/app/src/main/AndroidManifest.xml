@@ -20,21 +20,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CRUD_test"
         android:usesCleartextTraffic="true">
-        <activity android:name=".SignUpActivity"></activity>
+        <activity android:name=".ui.SignUpActivity"></activity>
         <activity
             android:name=".ui.login.LoginActivity2"
             android:label="@string/title_activity_login2" />
-        <activity android:name=".UpdateListActivity" />
-        <activity android:name=".GetActivity" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".ui.UpdateListActivity" />
+        <activity android:name=".ui.GetActivity" />
+        <activity android:name=".ui.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainPageActivity" />
-        <activity android:name=".WriteActivity" />
+        <activity android:name=".ui.MainPageActivity" />
+        <activity android:name=".ui.WriteActivity" />
     </application>
 
 </manifest>

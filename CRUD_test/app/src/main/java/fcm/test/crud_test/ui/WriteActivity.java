@@ -1,4 +1,4 @@
-package fcm.test.crud_test;
+package fcm.test.crud_test.ui;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -7,8 +7,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -25,13 +23,13 @@ import androidx.loader.content.CursorLoader;
 
 import java.io.File;
 
+import fcm.test.crud_test.R;
 import fcm.test.crud_test.listener.ListPostListener;
 import fcm.test.crud_test.listener.UserTokenListener;
 import fcm.test.crud_test.model.ListModel;
 import fcm.test.crud_test.model.LoginModel;
 import fcm.test.crud_test.model.data.UserToken;
 import okhttp3.MediaType;
-import okhttp3.MultipartBody;
 import okhttp3.MultipartBody.Part;
 import okhttp3.RequestBody;
 

@@ -1,4 +1,4 @@
-package fcm.test.crud_test;
+package fcm.test.crud_test.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import fcm.test.crud_test.R;
 import fcm.test.crud_test.listener.UserSignUpListener;
 import fcm.test.crud_test.model.LoginModel;
 import fcm.test.crud_test.model.data.SignUpRequest;
